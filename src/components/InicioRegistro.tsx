@@ -39,8 +39,8 @@ const InicioRegistro = () => {
             <div>
               <button type="submit">Registrar</button>
             </div>
-            <div>
-              <a href="/">voltar</a>
+            <div className={styles.voltar}>
+              <a href="/">Voltar</a>
             </div>
           </form>
         </div>
