@@ -116,4 +116,11 @@
       display: none;
    }
 
+   .container input, .container1 input{
+  
+    width: 70vw;
+    max-width: 500px;
+    height: 50px;
+  }
+
   }
