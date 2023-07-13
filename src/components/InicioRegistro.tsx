@@ -40,7 +40,7 @@ const InicioRegistro = () => {
               <button type="submit">Registrar</button>
             </div>
             <div>
-              <a href="#">voltar</a>
+              <a href="/">voltar</a>
             </div>
           </form>
         </div>
