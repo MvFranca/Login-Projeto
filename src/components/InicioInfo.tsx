@@ -1,6 +1,11 @@
 import styles from "../styles/InicioInfo.module.css";
 
-const InicioInfo = () => {
+ type elementos = {
+    opcao: string,
+    caminho: string,
+}
+
+const InicioInfo = ({opcao, caminho}: elementos) => {
     return(
         <div className={styles.container}>
             <div className={styles.informacoes}>
@@ -18,8 +23,8 @@ const InicioInfo = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="#">
-                        Registre-se
+                    <a href={`${caminho}`}>
+                        {opcao}
                     </a>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import IconBxlFacebook from '../icons/IconFacebook';
 import IconGooglePlus from '../icons/IconGoogle';
 import IconLockPasswordFill from '../icons/IconPassword';
 import IconUser from '../icons/IconUser';
-import styles from '../styles/InicioForm.module.css'
+import styles from '../styles/InicioEntrar.module.css'
 
 const InicioForm = () => {
   function enviar() {
@@ -22,7 +22,7 @@ const InicioForm = () => {
           <div className={styles.icons}>
             <IconBxlFacebook  className={styles.icon}/>
             <IconGooglePlus  className={styles.icon}/>
-            <IconApple className={styles.icon}/>
+            <IconApple className={styles.icon} />
           </div>
           <div>
             <p>

@@ -1,6 +1,6 @@
 
 
-.container{
+.container, .container1{
     background-color: #fff;
     width: 60vw;
     height: 100vh;
@@ -39,9 +39,16 @@
     padding: 5px;
     border: 2px solid #00000031;
     color: #00000071;
+    transition: 0.3s all;
+    cursor: pointer;
   }
   
-  .container input{
+  .icon:hover{
+    color: rgba(0, 0, 0, 0.692);
+
+  }
+
+  .container input, .container1 input{
     background-color: #00000017;
 
     border: none;
@@ -59,10 +66,12 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
+    cursor: pointer;
   }
 
   #senha{
     padding: 12px;
+    cursor: pointer;
   }
 
   form{
