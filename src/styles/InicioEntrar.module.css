@@ -116,7 +116,9 @@
 
   @media screen and (max-width: 912px){
   
-    
+    .container{
+      width: 100vw;
+    }
 
    .container1{
     width: 100vw;
