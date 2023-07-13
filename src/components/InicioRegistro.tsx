@@ -39,6 +39,9 @@ const InicioRegistro = () => {
             <div>
               <button type="submit">Registrar</button>
             </div>
+            <div>
+              <a href="#">voltar</a>
+            </div>
           </form>
         </div>
         </div>

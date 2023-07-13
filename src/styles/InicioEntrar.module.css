@@ -116,6 +116,10 @@
       display: none;
    }
 
+   .container1{
+    width: 100vw;
+   }
+
    .container input, .container1 input{
   
     width: 70vw;
