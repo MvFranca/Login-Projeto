@@ -11,7 +11,6 @@
 
   }
   
-  
   h1{
     color: #3e9bf3bb;
     margin-bottom: 15px;
@@ -50,7 +49,7 @@
 
   .container input, .container1 input{
     background-color: #00000017;
-
+    color: #000000;
     border: none;
     outline: none;
     padding: 10px 10px;
