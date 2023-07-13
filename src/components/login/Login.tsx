@@ -10,7 +10,10 @@ const Login = () => {
             opcao = "Registrar-se"
             caminho = '/registrar'
             />
-            <InicioForm/>
+            <div
+            className={styles.info}
+            ><InicioForm/>
+            </div>
         </div>
     )
 }

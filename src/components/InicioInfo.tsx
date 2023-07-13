@@ -18,7 +18,7 @@ const InicioInfo = ({opcao, caminho}: elementos) => {
             </div>
             <div className={styles.botoes}>
                 <div className={styles.entrar}>
-                    <a href="#" >
+                    <a href="/entrar" >
                         Entrar
                     </a>
                 </div>

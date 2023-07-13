@@ -6,6 +6,7 @@ import IconLockPasswordFill from '../icons/IconPassword';
 import IconUser from '../icons/IconUser';
 import styles from '../styles/InicioEntrar.module.css'
 
+
 const InicioForm = () => {
   function enviar() {
     event?.preventDefault();
@@ -46,6 +47,9 @@ const InicioForm = () => {
 
             <div>
               <button type="submit">ENTRAR</button>
+            </div>
+            <div className={styles.voltar}>
+              <a href="/">Voltar</a>
             </div>
           </form>
         </div>
