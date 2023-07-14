@@ -1,16 +1,21 @@
 
+import { useState } from 'react';
 import IconApple from '../icons/IconApple';
 import IconBxlFacebook from '../icons/IconFacebook';
 import IconGooglePlus from '../icons/IconGoogle';
 import IconLockPasswordFill from '../icons/IconPassword';
 import IconUser from '../icons/IconUser';
 import styles from '../styles/InicioEntrar.module.css'
-
+import { Link } from 'react-router-dom';
 
 const InicioForm = () => {
-  function enviar() {
-    event?.preventDefault();
-    console.log("opa");
+  const[email, setEmail] = useState<string>('')
+  const[senha, setSenha] = useState<string>('')
+
+  function enviar(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    console.log(email)
+    console.log(senha)
   }
 
   return (
@@ -35,24 +40,32 @@ const InicioForm = () => {
               <label htmlFor="email" className={styles.iconEmail}>
                 <IconUser width={20} height={20}/>
               </label>
-              <input type="email" name="email" id="email" placeholder='Email'/>
+              <input type="email" name="email" id="email" placeholder='Email'
+              onChange={(event)=> {
+                setEmail(event.currentTarget.value)
+              }}
+              />
             </div>
 
             <div>
               <label htmlFor="senha" className={styles.iconEmail} id={styles.senha}>
                 <IconLockPasswordFill width={25} height={25}/>
               </label>
-              <input type="password" name="senha" id="senha" placeholder='Senha'/>
+              <input type="password" name="password" id="senha" placeholder='Senha'
+              onChange={(event) => {
+                setSenha(event.currentTarget.value)
+              }}
+              />
             </div>
 
             <div>
               <button type="submit">ENTRAR</button>
             </div>
             <div className={styles.voltar}>
-              <a href="/">Voltar</a>
+              <Link to="/">Voltar</Link>
             </div>
           </form>
-        </div>
+        </div>  
         </div>
     </>
   );

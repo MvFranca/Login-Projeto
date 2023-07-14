@@ -2,6 +2,7 @@ import IconEmail from '../icons/IconEmail'
 import IconLockPasswordFill from '../icons/IconPassword'
 import IconUser from '../icons/IconUser'
 import styles from '../styles/InicioEntrar.module.css'
+import { Link } from 'react-router-dom'
 
 const InicioRegistro = () => {
     return(
@@ -40,7 +41,7 @@ const InicioRegistro = () => {
               <button type="submit">Registrar</button>
             </div>
             <div className={styles.voltar}>
-              <a href="/">Voltar</a>
+              <Link to="/">Voltar</Link>
             </div>
           </form>
         </div>

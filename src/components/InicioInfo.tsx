@@ -1,4 +1,5 @@
 import styles from "../styles/InicioInfo.module.css";
+import { Link } from "react-router-dom";
 
  type elementos = {
     opcao: string,
@@ -18,14 +19,14 @@ const InicioInfo = ({opcao, caminho}: elementos) => {
             </div>
             <div className={styles.botoes}>
                 <div className={styles.entrar}>
-                    <a href="/entrar" >
+                    <Link to="/entrar" >
                         Entrar
-                    </a>
+                    </Link>
                 </div>
                 <div>
-                    <a href={`${caminho}`}>
+                    <Link to={`${caminho}`}>
                         {opcao}
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

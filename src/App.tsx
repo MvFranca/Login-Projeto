@@ -1,15 +1,12 @@
-
-import './App.css'
-import Login from './components/login/Login'
+import "./App.css";
+import Login from "./components/login/Login";
 
 function App() {
-
   return (
-      <div id='container1'>
-        <Login/>
-      </div>
-  )
-
+    <div id="container1">
+      <Login />
+    </div>
+  );
 }
 
-export default App
+export default App;
